@@ -6,8 +6,8 @@ class Program
     {
         DisplayWelcomeMessage();
 
-        string Name = PromptUserName();
-        int Number = PromptUserNumber();
+        string Name = UserName();
+        int Number = UserNumber();
 
         int Numbersquared = SquareNumber(Number);
 
@@ -19,7 +19,7 @@ class Program
         Console.WriteLine("Welcome to this program!");
     }
 
-    static string PromptUserName()
+    static string UserName()
     {
         Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
@@ -27,7 +27,7 @@ class Program
         return name;
     }
 
-    static int PromptUserNumber()
+    static int UserNumber()
     {
         Console.Write("What is your favorite number? ");
         int number = int.Parse(Console.ReadLine());
