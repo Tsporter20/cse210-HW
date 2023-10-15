@@ -72,7 +72,7 @@ namespace HelpfulJournal
         static string GetRandomPrompt(List<string> prompts)
         {
 
-            //this is the code used to get a random prompt for the user form that last of prompts above
+            //this is the code used to get a random prompt for the user form that list of prompts above
 
             Random random = new Random();
             int index = random.Next(prompts.Count);
